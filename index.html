@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors Game</title>
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="title">
+        <h1>Rock Paper Scissors</h1>
+      </div>
+      <div id="userEntry">
+          <form>
+            <label for="userForm">Enter Your Name:</label>
+            <input class="userFormInput" id="userForm" type="text" value="Name">
+            <button class="btn btn-primary" id="submitUserName" type="submit">Submit</button>
+          </form>
+      </div>
+      <div id="turnJumbo">
+        <div id="player1Turn">
+          <h2>Hi <span class="userName">User Name</span>. You are player 1!</h2>
+          <p class="yourTurn">It's now your turn!</p>
+          <p class=""="waiting">Waiting for Player 2 to choose.</p>
+        </div>
+        <div id="player2Turn">
+          <h2>Hi <span class="userName">User Name</span>. You are player 2!</h2>
+          <p class="yourTurn">It's now your turn!</p>
+          <p class="waiting">Waiting for Player 1 to choose.</p>
+        </div>
+      </div>
+      <div id="gameContainer">
+        <div id="player1">
+          <div id="startScreen1">
+            <p>Waiting for Player 1</p>
+          </div>
+          <div id="player1Choice">
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissors">Scissors</button>
+            <ul>
+              <li>Wins: <span id="player1Wins">0</span></li>
+              <li>Wins: <span id="player1Losses">0</span></li>
+            </ul>
+          </div>
+          <div id="player1Guess">
+              <h3>Rock</h3>
+          </div>
+        </div>
+        <div id="scoreTracking">
+
+        </div>
+        <div id="player2">
+          <div id="startScreen2">
+            <p>Waiting for Player 1</p>
+          </div>
+          <div id="player2Choice">
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissors">Scissors</button>
+            <ul>
+              <li>Wins: <span id="player2Wins">0</span></li>
+              <li>Wins: <span id="player2Losses">0</span></li>
+            </ul>
+          </div>
+          <div id="player2Guess">
+              <h3>Rock</h3>
+          </div>
+        </div>
+      </div>
+      <div id="trashTalk">
+          <div id="trashWindow">
+            <p>Trash Talk Player 1</p>
+            <p>Trash Talk Player 2</p>
+          </div>
+          <div id="trashForm">
+            <form>
+              <input class="trashInput" id="trashInput" type="text" value="Talk some trash!">
+              <button class="trashButton" id="trashButton" type="submit">Send</button>
+            </form>
+          </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script type="text/javascript" src="js/rps.js"></script>
+  </body>
+</html>
