@@ -19,12 +19,7 @@ firebase.initializeApp(config);
 
   // Capture Button Click
   $("#submitUserName").on("click", function(event) {
-    // Don't refresh the page!
     event.preventDefault();
-
-    // YOUR TASK!!!
-    // Code in the logic for storing and retrieving the most recent user.
-    // Don't forget to provide initial data to your Firebase database.
     name = $("#userForm").val().trim();
     $("#startScreen1").hide();
     database.ref().set({
@@ -35,7 +30,6 @@ firebase.initializeApp(config);
 
   // Firebase watcher + initial loader HINT: .on("value")
   database.ref().on("value", function(snapshot) {
-    // Change the HTML to reflect
     $("#player1Turn .userName").text(name);
 
     // Handle the errors
@@ -50,10 +44,7 @@ firebase.initializeApp(config);
   $("#player1Choice button").on("click", function() {
 
     $("#player1Guess").text(userGuess);
-    
-
-
-      console.log("game container button click is working");
+    console.log("game container button click is working");
     // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
     // if ((userGuess === "rock") || (userGuess === "paper") || (userGuess === "scissors")) {
     //
@@ -74,3 +65,13 @@ firebase.initializeApp(config);
     //   }
     // }
   });
+
+//still working on:
+
+  //need to set score tracking
+
+  //need to set show and hides of player cards based on the stage of the game
+
+  //need to set trash talking so it's being sent and set in the database
+
+  //need to figure out how to set player two user name entry and player two choices
