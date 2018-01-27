@@ -13,8 +13,8 @@ firebase.initializeApp(config);
 
   // Initial Values
   var name = name;
-  var userGuess = $("#player1Choice button").attr("data-person");
-  var oponentGuess = $("#player2Choice button").attr("data-person");
+  var userGuess = $("#player1Choice button").attr("value");
+  var oponentGuess = $("#player2Choice button").val();
   // var guess = guess;
 
   // Capture Button Click
@@ -28,8 +28,7 @@ firebase.initializeApp(config);
     name = $("#userForm").val().trim();
     $("#startScreen1").hide();
     database.ref().set({
-      name: name,
-      userGuess: userGuess
+      name: name
     });
 
   });
@@ -48,27 +47,30 @@ firebase.initializeApp(config);
   var ties = 0;
   // var userGuess = $("#gameContainer button").text();
 
-  $("#gameContainer button").on("click", function(event) {
-      // $(this).val(userGuess);
-      $("#player1Guess h3").text(userGuess);
+  $("#player1Choice button").on("click", function() {
+
+    $("#player1Guess").text(userGuess);
+    
+
+
       console.log("game container button click is working");
     // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
-    if ((userGuess === "rock") || (userGuess === "paper") || (userGuess === "scissors")) {
-
-      if ((userGuess === "rock") && (oponentGuess === "scissors")) {
-        wins++;
-      } else if ((userGuess === "rock") && (oponentGuess === "paper")) {
-        losses++;
-      } else if ((userGuess === "scissors") && (oponentGuess === "rock")) {
-        losses++;
-      } else if ((userGuess === "scissors") && (oponentGuess === "paper")) {
-        wins++;
-      } else if ((userGuess === "paper") && (oponentGuess === "rock")) {
-        wins++;
-      } else if ((userGuess === "paper") && (oponentGuess === "scissors")) {
-        losses++;
-      } else if (userGuess === oponentGuess) {
-        ties++;
-      }
-    }
+    // if ((userGuess === "rock") || (userGuess === "paper") || (userGuess === "scissors")) {
+    //
+    //   if ((userGuess === "rock") && (oponentGuess === "scissors")) {
+    //     wins++;
+    //   } else if ((userGuess === "rock") && (oponentGuess === "paper")) {
+    //     losses++;
+    //   } else if ((userGuess === "scissors") && (oponentGuess === "rock")) {
+    //     losses++;
+    //   } else if ((userGuess === "scissors") && (oponentGuess === "paper")) {
+    //     wins++;
+    //   } else if ((userGuess === "paper") && (oponentGuess === "rock")) {
+    //     wins++;
+    //   } else if ((userGuess === "paper") && (oponentGuess === "scissors")) {
+    //     losses++;
+    //   } else if (userGuess === oponentGuess) {
+    //     ties++;
+    //   }
+    // }
   });
