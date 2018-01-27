@@ -1,0 +1,99 @@
+body{
+  font-family: 'Ubuntu', sans-serif;
+  background-color:#EEE;
+  padding: 0;
+  margin: 0;
+}
+#wrapper{
+  width: 800px;
+  background-color: #FFF;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0;
+  border-radius: 10px;
+}
+button{
+  width: 180px;
+  height: 50px;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: brown;
+}
+#title{}
+h1{}
+#userEntry{}
+#userEntry form{}
+#userEntry form label{}
+input{
+  width: 200px;
+  height: 28px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #777;
+  padding: 10px 0 10px 10px;
+}
+#userEntry form button{}
+#turnJumbo{}
+#player1Turn{}
+h2{}
+h2 span{}
+#player1Turn p{}
+#player2Turn {
+  display: none;
+}
+#player2Turn p{}
+#gameContainer{}
+.box{
+  float: left;
+  width: 23%;
+  border: 1px solid #777;
+  padding: 0 20px;
+  margin: 0 20px;
+  display: inline-block;
+}
+#player1{}
+#startScreen1{}
+#player1Choice{}
+#player2Choice{
+  display: none;
+}
+  #gameContainer button{
+    margin-bottom:10px;
+  }
+button.rock{}
+button.paper{}}
+button.scissors{}
+  ul{}
+    li{}
+#player1Guess{}
+h3{}
+#scoreTracking{}
+#player2{}
+#startScreen2{}
+#player2Choice{}
+#player2Guess{}
+#trashTalk{
+  clear:both;
+  width:100%;
+}
+#trashWindow{
+  width: 68%;
+  margin: 30px auto;
+  border: 1px solid #777;
+  height: 200px;
+  overflow-y: scroll;
+}
+#trashForm{}
+#trashForm form{}
+#trashForm input{}
+#trashForm button{}
+.trash1{
+  text-align: left;
+}
+.trash2{
+  text-align: right;
+}
+.clear{clear:both;}

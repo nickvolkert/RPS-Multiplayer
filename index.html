@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Rock Paper Scissors Game</title>
-    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div id="wrapper">
@@ -30,14 +30,14 @@
         </div>
       </div>
       <div id="gameContainer">
-        <div id="player1">
+        <div id="player1" class="box">
           <div id="startScreen1">
             <p>Waiting for Player 1</p>
           </div>
           <div id="player1Choice">
-            <button class="rock">Rock</button>
-            <button class="paper">Paper</button>
-            <button class="scissors">Scissors</button>
+            <button class="rock" value="data-person">Rock</button>
+            <button class="paper" value="data-person">Paper</button>
+            <button class="scissors" value="data-person">Scissors</button>
             <ul>
               <li>Wins: <span id="player1Wins">0</span></li>
               <li>Wins: <span id="player1Losses">0</span></li>
@@ -47,17 +47,17 @@
               <h3>Rock</h3>
           </div>
         </div>
-        <div id="scoreTracking">
-
+        <div id="scoreTracking" class="box">
+            <h3>User Wins!</h3>
         </div>
-        <div id="player2">
+        <div id="player2" class="box">
           <div id="startScreen2">
             <p>Waiting for Player 1</p>
           </div>
           <div id="player2Choice">
-            <button class="rock">Rock</button>
-            <button class="paper">Paper</button>
-            <button class="scissors">Scissors</button>
+            <button class="rock" value="rock">Rock</button>
+            <button class="paper" value="paper">Paper</button>
+            <button class="scissors" value="scissors">Scissors</button>
             <ul>
               <li>Wins: <span id="player2Wins">0</span></li>
               <li>Wins: <span id="player2Losses">0</span></li>
@@ -67,11 +67,12 @@
               <h3>Rock</h3>
           </div>
         </div>
+        <div class="clear"></div>
       </div>
       <div id="trashTalk">
           <div id="trashWindow">
-            <p>Trash Talk Player 1</p>
-            <p>Trash Talk Player 2</p>
+            <p class="trash1">Trash Talk Player 1</p>
+            <p class="trash2">Trash Talk Player 2</p>
           </div>
           <div id="trashForm">
             <form>
