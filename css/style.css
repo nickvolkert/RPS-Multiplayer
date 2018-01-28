@@ -70,30 +70,67 @@ button.scissors{}
     li{}
 #player1Guess{}
 h3{}
-#scoreTracking{}
+#scoreAlert{
+
+}
+.scoreTracking{
+
+}
+.scoreTracking ul{
+  padding:0;
+  margin: 0;
+  list-style: none;
+}
+.scoreTracking ul li{
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
 #player2{}
 #startScreen2{}
 #player2Choice{}
 #player2Guess{}
 #trashTalk{
-  clear:both;
-  width:100%;
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  background-color: #FFF;
+  border-radius: 15px;
+  width:430px;
 }
 #trashWindow{
-  width: 68%;
+  width: 90%;
   margin: 30px auto;
   border: 1px solid #777;
   height: 200px;
   overflow-y: scroll;
 }
-#trashForm{}
+#trashForm{
+  width:340px;
+}
 #trashForm form{}
 #trashForm input{}
-#trashForm button{}
+#trashForm button{width:120px;}
 .trash1{
   text-align: left;
+  background-color: darkseagreen;
+  display: block;
+  width: auto;
+  float: left;
+  clear: both;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px 0 0 5px;
 }
 .trash2{
   text-align: right;
+  background-color: cornflowerblue;
+  display: block;
+  width: auto;
+  float: right;
+  clear: both;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px 5px 0 0;
 }
 .clear{clear:both;}

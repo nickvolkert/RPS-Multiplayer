@@ -38,16 +38,18 @@
             <button class="rock" value="rock">Rock</button>
             <button class="paper" value="paper">Paper</button>
             <button class="scissors" value="scissors">Scissors</button>
-            <ul>
-              <li>Wins: <span id="player1Wins">0</span></li>
-              <li>Wins: <span id="player1Losses">0</span></li>
-            </ul>
+            <div id="player1Score" class="scoreTracking">
+              <ul>
+                <li>Wins: <span id="player1Wins">0</span></li>
+                <li>Losses: <span id="player1Losses">0</span></li>
+              </ul>
+            </div>
           </div>
           <div id="player1Guess">
               <h3>Rock</h3>
           </div>
         </div>
-        <div id="scoreTracking" class="box">
+        <div id="scoreAlert" class="box">
             <h3>User Wins!</h3>
         </div>
         <div id="player2" class="box">
@@ -58,10 +60,12 @@
             <button class="rock" value="rock">Rock</button>
             <button class="paper" value="paper">Paper</button>
             <button class="scissors" value="scissors">Scissors</button>
-            <ul>
-              <li>Wins: <span id="player2Wins">0</span></li>
-              <li>Wins: <span id="player2Losses">0</span></li>
-            </ul>
+            <div id="player2Score" class="scoreTracking">
+              <ul>
+                <li>Wins: <span id="player2Wins">0</span></li>
+                <li>Losses: <span id="player2Losses">0</span></li>
+              </ul>
+            </div>
           </div>
           <div id="player2Guess">
               <h3>Rock</h3>
@@ -69,18 +73,19 @@
         </div>
         <div class="clear"></div>
       </div>
-      <div id="trashTalk">
-          <div id="trashWindow">
-            <p class="trash1">Trash Talk Player 1</p>
-            <p class="trash2">Trash Talk Player 2</p>
-          </div>
-          <div id="trashForm">
-            <form>
-              <input class="trashInput" id="trashInput" type="text" value="Talk some trash!">
-              <button class="trashButton" id="trashButton" type="submit">Send</button>
-            </form>
-          </div>
-      </div>
+
+    </div>
+    <div id="trashTalk">
+        <div id="trashWindow">
+          <p class="trash1">Trash Talk Player 1</p>
+          <p class="trash2">Trash Talk Player 2</p>
+        </div>
+        <div id="trashForm">
+          <form>
+            <input class="trashInput" id="trashInput" type="text" value="Talk some trash!">
+            <button class="trashButton" id="trashButton" type="submit">Send</button>
+          </form>
+        </div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
