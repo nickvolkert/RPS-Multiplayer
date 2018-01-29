@@ -56,9 +56,11 @@ h2 span{}
 }
 #player1{}
 #startScreen1{}
-#player1Choice{}
+#player1Choice{
+  
+}
 #player2Choice{
-  display: none;
+
 }
   #gameContainer button{
     margin-bottom:10px;
@@ -100,13 +102,15 @@ h3{}
 }
 #trashWindow{
   width: 90%;
-  margin: 30px auto;
+  margin: 30px auto 20px auto;
   border: 1px solid #777;
   height: 200px;
   overflow-y: scroll;
+  border-radius: 3px;
 }
 #trashForm{
   width:340px;
+  margin:0 auto 20px auto;
 }
 #trashForm form{}
 #trashForm input{}
