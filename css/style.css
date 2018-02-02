@@ -53,14 +53,22 @@ h2 span{}
   padding: 0 20px;
   margin: 0 20px;
   display: inline-block;
+  position: relative;
+  height: 240px;
 }
 #player1{}
-#startScreen1{}
-#player1Choice{
-  
+#startScreen1,
+#startScreen2{
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+#player1Choice,
 #player2Choice{
-
+  padding: 20px 0 0 0;
 }
   #gameContainer button{
     margin-bottom:10px;
